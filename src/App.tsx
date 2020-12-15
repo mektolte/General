@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
@@ -13,8 +13,7 @@ import { IonReactRouter } from '@ionic/react-router';
 
 import BmiTab from './pages/BmiTab';
 import CurrenC from './pages/CurrencyC';
-import Tab3 from './pages/Tab3';
-import Home from './pages/Home';
+import Settings from './pages/Settings';
 
 
 /* Theme variables */
@@ -37,7 +36,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route path="/CalculateBMI" component={BmiTab} exact={true} />
           <Route path="/ConvertCurrency" component={CurrenC} exact={true} />
-          <Route path="/tab3" component={Tab3} />
+          <Route path="/Settings" component={Settings} />
   
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -49,9 +48,9 @@ const App: React.FC = () => (
             <IonIcon icon={Tab1Icon} />
             <IonLabel>CurrenC</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="Settings" href="/Settings">
             <IonIcon icon={Tab2Icon} size="50px"/>
-            <IonLabel>Info.</IonLabel>
+            <IonLabel>Settings</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

@@ -6,12 +6,10 @@ import {
   IonItem,
   IonLabel,
   IonInput,
-  IonGrid,
   IonContent,
   IonAlert,
   IonCol,
   IonRow,
-  IonCard,
   IonPage,
   
 } from "@ionic/react";
@@ -19,7 +17,6 @@ import "./bmi.css";
 import InputCtrl from '../components/InputCtrl';
 import BmiControls from "../components/BmiControls";
 import BmiResult from "../components/BmiResult";
-import { IonCardContent } from '@ionic/react';
 
 
 const BmiTab: React.FC = () => {

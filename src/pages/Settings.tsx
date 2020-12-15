@@ -1,6 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonIcon, IonLabel, IonToggle, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonImg} from "@ionic/react";
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonIcon, IonLabel, IonToggle, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle} from "@ionic/react";
 import './Tab3.css';
 import { moon } from "ionicons/icons";
 
@@ -10,7 +9,7 @@ const toggleMode = () => {
 
 
 
-const Tab3: React.FC = () => {
+const Settings: React.FC = () => {
     return (
       <IonPage>
         <IonHeader>
@@ -53,11 +52,10 @@ const Tab3: React.FC = () => {
                 </IonCardHeader>
               </IonCard>
             </IonContent>
-          {/* <ExploreContainer /> */}
         </IonContent>
       </IonPage>
     );
   };
 
 
-export default Tab3;
+export default Settings;

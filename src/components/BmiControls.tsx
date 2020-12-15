@@ -1,12 +1,7 @@
 import { IonRow, IonCol, IonButton, IonIcon } from "@ionic/react";
 import React from "react";
 import  Icon1 from '../assets/ico/Icon1.svg';
-import  Icon2 from '../assets/ico/Icon2.svg';
-import  Icon3 from '../assets/ico/Icon3.svg';
-import  Icon4 from '../assets/ico/Icon4.svg';
-import   Icon5 from '../assets/ico/Icon5.svg';
-import   Icon6 from '../assets/ico/Icon6.svg';
-import   Icon7 from '../assets/ico/Icon7.svg';
+
 import   Tab1Icon from '../assets/ico/Tab1Icon.svg';
 
 
