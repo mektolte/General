@@ -1,18 +1,15 @@
-.bg{background-color:#333333;
-    background-image: url('../assets/img/garuda.png');
-    margin:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 84vh;
-    text-align: center;
-    
-    background-repeat: no-repeat;
-    background-position: center;
+.component-icon {
+  border-radius: 50%;
+
+  padding: 7px;
+  height: 18px;
+  width: 18px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.bg2{
-    background-color: rgba(161, 159, 159, 0.514);
-    height:600px;
-    width:600px;
-    
+
+.component-icon-dark {
+  background: var(--ion-color-step-850, #27323e);
+  color: var(--ion-item-background, #fff);
 }
