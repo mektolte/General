@@ -47,9 +47,9 @@ setError("Plase input Invalid, please input a number that is > 0");
     }
 
      // Conversion Factor || feet and lbs : Default: meters and Kg
-     const heightConversionFactor= calcUnits==='impr'? 3.28:1;
+     const heightConversionFactor= calcUnits==='impr'? 0.03280:1;
      const height= +inputHeight / heightConversionFactor;
-    const weightConversionFactor= calcUnits==='impr'? 2.2:1;
+    const weightConversionFactor= calcUnits==='impr'? 2.2046:1;
     const weight= +inputWeight / weightConversionFactor;
     
 
@@ -57,7 +57,8 @@ setError("Plase input Invalid, please input a number that is > 0");
 
 
     //Calculates
-    const bmi = weight / (height * height);
+    
+    const bmi = weight / ((height * height)/10000);
     console.log(bmi)
 
    
@@ -102,7 +103,7 @@ setError("Plase input Invalid, please input a number that is > 0");
       </IonRow>
      
         <IonItem >
-          <IonLabel position="floating">Your Height ({calcUnits === 'mtrx' ? 'meters':'feet'}) </IonLabel>
+          <IonLabel position="floating">Your Height ({calcUnits === 'mtrx' ? 'Cm':'feet'}) </IonLabel>
           <IonInput  ref={hRef} type="number"></IonInput>
         </IonItem>
         <IonItem >

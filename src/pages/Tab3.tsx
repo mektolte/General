@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonIcon, IonLabel, IonToggle} from "@ionic/react";
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonIcon, IonLabel, IonToggle, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonImg} from "@ionic/react";
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 import { moon } from "ionicons/icons";
@@ -33,7 +33,26 @@ const Tab3: React.FC = () => {
                 onIonChange={toggleMode}
               />
             </IonItem>
+            <IonItem class="ion-text-center">
+              <IonLabel>About</IonLabel>
+            </IonItem>
           </IonList>
+          <IonContent class="ion-text-center">
+            <IonCard>
+                <IonCardHeader>
+                  <IonCardSubtitle>Head Developer</IonCardSubtitle>
+                  <IonCardTitle>Kritmetee Wong Ngern</IonCardTitle>
+                  <IonCardSubtitle>201800219</IonCardSubtitle>
+                </IonCardHeader>
+              </IonCard>
+              <IonCard>
+                <IonCardHeader>
+                  <IonCardSubtitle>Developer</IonCardSubtitle>
+                  <IonCardTitle>Rakai Gersom</IonCardTitle>
+                  <IonCardSubtitle>201800240</IonCardSubtitle>
+                </IonCardHeader>
+              </IonCard>
+            </IonContent>
           {/* <ExploreContainer /> */}
         </IonContent>
       </IonPage>

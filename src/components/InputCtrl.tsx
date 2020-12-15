@@ -9,7 +9,7 @@ const InputCtrl: React.FC <{sValue:'mtrx' | 'impr'; onSelectValue:(value:'mtrx' 
 ;    return(
         <IonSegment value={props.sValue} onIonChange={inputChangerHandler}>
             <IonSegmentButton  value="mtrx">
-            <IonLabel>m/kg</IonLabel>
+            <IonLabel>cm/kg</IonLabel>
             </IonSegmentButton>
             <IonSegmentButton value="impr">
             <IonLabel>ft/lbs</IonLabel>
